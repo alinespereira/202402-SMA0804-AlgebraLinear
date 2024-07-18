@@ -1,5 +1,10 @@
 name: Build LaTeX document
+
 on: [push]
+
+permissions:
+  contents: write
+
 jobs:
   build_latex:
     runs-on: ubuntu-latest
@@ -15,3 +20,7 @@ jobs:
         with:
           name: PDF
           path: notas-de-aula.pdf
+      - name: Commit report
+        run: |
+            git commit -am "Add pdf to repo"
+            git push
