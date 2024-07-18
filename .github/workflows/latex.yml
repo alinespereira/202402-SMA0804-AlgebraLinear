@@ -15,12 +15,9 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           root_file: notas-de-aula.tex
-      - name: Upload PDF file
-        uses: actions/upload-artifact@v4
-        with:
-          name: PDF
-          path: notas-de-aula.pdf
       - name: Commit report
         run: |
-            git commit -am "Add pdf to repo"
-            git push
+          git config --global user.email "line.asramos@gmail.com"
+          git config --global user.name "Aline Pereira"
+          git commit -am "Add pdf to repo"
+          git push
