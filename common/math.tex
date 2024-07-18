@@ -1,0 +1,44 @@
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+\usepackage[thinc]{esdiff}
+\usepackage{hyperref}
+
+\renewcommand\qedsymbol{$\blacksquare$}
+
+\everymath{\displaystyle}
+
+\newtheoremstyle{sltheorem}
+    {}                % Space above
+    {}                % Space below
+    {\slshape}        % Theorem body font % (default is "\upshape")
+    {1cm}             % Indent amount
+    {\bfseries}       % Theorem head font % (default is \mdseries)
+    {.}               % Punctuation after theorem head % default: no punctuation
+    { }               % Space after theorem head
+    {}                % Theorem head spec
+
+\theoremstyle{sltheorem}
+
+\theoremstyle{sltheorem}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}[theorem]{Corolário}
+\newtheorem{lemma}[theorem]{Lema}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{proposition}[theorem]{Proposição}
+\newtheorem{question}{Questão}
+\newtheorem{conjecture}[theorem]{Conjectura}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definição}
+\newtheorem{example}[theorem]{Exemplo}
+\newtheorem{notation}[theorem]{Notação}
+\newtheorem{exercise}[theorem]{Exercício}
+
+% \usepackage{mdframed}
+% \surroundwithmdframed[linewidth=0.5pt]{theorem}
+
+% \usepackage[style=authoryear]{biblatex}
+% \usepackage{csquotes}
+% \addbibresource{bibfile.bib}
