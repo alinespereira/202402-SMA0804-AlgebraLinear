@@ -22,8 +22,8 @@ jobs:
       #     path: notas-de-aula.pdf
       - name: Commit created PDF
         run: |
-          git config user.name "$(git log -n 1 --pretty=format:%an)"
-          git config user.email "$(git log -n 1 --pretty=format:%ae)"
+          git config user.email "line.asramos@gmail.com"
+          git config user.name "Aline Pereira"
           git add .
           git commit
           git push
