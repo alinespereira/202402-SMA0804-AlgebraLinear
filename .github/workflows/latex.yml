@@ -15,9 +15,3 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           root_file: notas-de-aula.tex
-      - name: Commit report
-        run: |
-          git config --global user.email "line.asramos@gmail.com"
-          git config --global user.name "Aline Pereira"
-          git commit -am "Add pdf to repo"
-          git push
